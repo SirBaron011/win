@@ -1,0 +1,16 @@
+{
+  "name": "Ubuntu Dev Container",
+  "build": {
+    "dockerfile": "../Dockerfile",
+    "context": ".."
+  },
+  "settings": {
+    "terminal.integrated.shell.linux": "/bin/bash"
+  },
+  "extensions": [
+    "ms-vscode.cpptools",
+    "ms-python.python"
+  ],
+  "postCreateCommand": "sudo apt-get update && sudo apt-get upgrade -y",
+  "remoteUser": "devuser"
+}
